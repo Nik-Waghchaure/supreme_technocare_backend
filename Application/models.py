@@ -80,3 +80,15 @@ class SubCategoryDescriptions(Base):
     is_delete = Column(Boolean, default=False)
     createdAt = Column(TIMESTAMP, server_default='CURRENT_TIMESTAMP')
     updatedate = Column(TIMESTAMP, server_default='CURRENT_TIMESTAMP')
+
+
+class ContactUs(Base):
+    __tablename__ = "contactus"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String)
+    email = Column(String)
+    mobile = Column(String)
+    message = Column(String)
+    createdAt = Column(TIMESTAMP, server_default='CURRENT_TIMESTAMP')
+    updatedate = Column(TIMESTAMP, server_default='CURRENT_TIMESTAMP')
