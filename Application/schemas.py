@@ -6,3 +6,9 @@ class ProductCreate(BaseModel):
 class CategoryCreate(BaseModel):
     category_name: str
     product_id: int
+
+class ContactForm(BaseModel):
+    name: str
+    email: str
+    mobile: str
+    message: str
